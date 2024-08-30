@@ -1,0 +1,45 @@
+body{
+    background-color: #D8EFD3;
+    cursor: pointer;
+}
+
+/* Ensure the right-side div is fixed in size and scrollable */
+.scrollable-div {
+    background-color: #95D2B3;
+    margin-top: 2%;
+    height: 40vh; /* Adjust the height as needed */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+    border: 1px solid #ddd; /* Optional border for visibility */
+    padding: 0px; /* Optional padding */
+}
+
+/* Style for text boxes */
+.text-box {
+    background-color: #FBF9F1;
+    color: #55AD9B;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1%; /* Space between text boxes */
+    padding: 1px;
+}
+.text-box:hover{
+    background-color: #55AD9B;
+    color:#FBF9F1;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 62.50%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
